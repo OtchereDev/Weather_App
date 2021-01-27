@@ -14,7 +14,63 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    position: relative;
+}
+
+body .popup {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    transition: width 2s ease-in-out;
+}
+
+body .popup.closed {
+    width: 0;
+}
+
+body .popup .popup_form {
+    width: 80%;
+    padding-top: 5;
+}
+
+body .popup .popup_form form {
+    width: 100%;
+}
+
+body .popup.closed .popup_form form {
+    display: none;
+}
+
+body .popup .popup_form form input {
+    width: 100%;
+    padding: 3%;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body .popup .popup_form form input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body .popup .popup_form form button {
+    padding: 3%;
+    background-color: orangered;
+    border-radius: 5px;
+    border: none;
+    margin: 5% auto;
+    display: block;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
 }
 
 body .container {
@@ -41,6 +97,7 @@ body .container .weather_content .change {
     top: 5%;
     right: 5%;
     background-color: orangered;
+    cursor: pointer;
 }
 
 body .container .weather_content .change ion-icon {
@@ -61,7 +118,15 @@ body .container .weather_content .weather_temp {
 }
 
 @media screen and (min-width:760px) {
-    body {}
+    body .popup {
+        padding-top: 5%;
+    }
+    body .popup .popup_form {
+        width: 50%;
+    }
+    body .popup .popup_form form button {
+        padding: 3%;
+    }
     body .container {
         width: 30%;
         height: 90%;

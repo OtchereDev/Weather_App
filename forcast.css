@@ -123,6 +123,7 @@ body .container .weather_content .weather_temp {
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    text-shadow: 0px 0px 8px black;
 }
 
 body .container .forcast {
@@ -141,11 +142,10 @@ body .container .forcast .forcast_element {
     align-items: center;
     border-style: none solid none none;
     border-width: 1px;
-    border-color: rgba(0, 0, 0, 0.74);
+    border-color: rgba(0, 0, 0, 0.411);
 }
 
 body>div.container>div.forcast>div:nth-child(4) {
-    /* background-color: red; */
     border: none;
 }
 

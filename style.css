@@ -95,7 +95,7 @@ body .popup .popup_form form button {
 
 body .container {
     width: 80%;
-    padding-top: 20%;
+    padding-top: 40%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -104,6 +104,7 @@ body .container {
     background-repeat: no-repeat;
     color: white;
     position: relative;
+    box-shadow: 0px 0px 8px black;
 }
 
 body .container.day {
@@ -133,12 +134,14 @@ body .container .weather_content .city_name h2 {
     font-weight: 400;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.555);
 }
 
 body .container .weather_content .weather_temp {
     font-size: 5rem;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.555);
 }
 
 @media screen and (min-width:760px) {
@@ -163,7 +166,6 @@ body .container .weather_content .weather_temp {
     body .container {
         width: 30%;
         height: 90%;
-        background-color: rebeccapurple;
         padding-top: 10%;
         border-radius: 10px;
     }

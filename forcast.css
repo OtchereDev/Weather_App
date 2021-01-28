@@ -33,15 +33,15 @@ body .popup {
 }
 
 body .popup .change {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top: 2%;
+    right: 3%;
     background-color: orangered;
     cursor: pointer;
 }
@@ -126,6 +126,10 @@ body .container .weather_content {
     padding-top: 25%;
 }
 
+body .container.day .weather_content {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('assets/pexels-bruno-scramgnon-585759.jpg');
+}
+
 body .container .weather_content .change ion-icon {
     font-size: 24px;
 }
@@ -189,6 +193,12 @@ body .container .forcast .forcast_element h3 {
     }
     body .popup .popup_form form button {
         padding: 3%;
+    }
+    body .popup .change {
+        width: 50px;
+        height: 50px;
+        top: 5%;
+        right: 5%;
     }
     body .container {
         width: 30%;

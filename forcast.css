@@ -199,7 +199,8 @@ body .container .weather_content .weather_icon {
 }
 
 body .container.day .weather_content .weather_icon .sun {
-    width: 24px;
+    width: 62px;
+    color: black;
 }
 
 body .container .weather_content .weather_icon .sun {
@@ -211,7 +212,8 @@ body .container.day .weather_content .weather_icon .moon {
 }
 
 body .container .weather_content .weather_icon .moon {
-    width: 24px;
+    width: 62px;
+    color: black;
 }
 
 @media screen and (min-width:760px) {

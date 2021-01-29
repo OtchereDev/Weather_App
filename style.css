@@ -156,7 +156,7 @@ body .container .weather_content .weather_icon {
 }
 
 body .container.day .weather_content .weather_icon .sun {
-    width: 24px;
+    width: 62px;
     color: black;
     ;
 }
